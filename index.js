@@ -24,3 +24,12 @@ const students = [
 
     },
 ];
+
+
+app.get("/", (req, res) => {
+    res.json("Welcome to my API");
+});
+
+const port = 8000
+
+app.listen(port,() => console.log(`Listening on the port ${port}`));
